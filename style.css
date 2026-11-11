@@ -90,20 +90,6 @@ main {
 .section h2 { margin: 0 0 14px; font-size: 1.3rem; }
 .section p { margin: 0 0 12px; color: var(--muted); }
 
-.shots {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.shots div {
-  aspect-ratio: 9 / 19;
-  border: 1px dashed var(--line);
-  border-radius: 20px;
-  background: var(--soft);
-}
-
 .document { padding: 24px 0 72px; }
 .document h1 { margin: 0 0 6px; font-size: 1.9rem; }
 .document .date { margin: 0 0 32px; color: var(--muted); font-size: 0.88rem; }
