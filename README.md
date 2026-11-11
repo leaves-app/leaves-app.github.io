@@ -9,12 +9,12 @@ GitHub Pages site for Aica (ai-calendar).
 - `privacy.html` — Privacy policy
 - `terms.html` — Terms of service
 - `tokushoho.html` — Disclosure under the Act on Specified Commercial Transactions
-- `billing.html` — In-app purchase information
+- `billing.html` — In-app purchase information (plans, auto-renewal, cancellation, refunds, restore)
 - `assets/` — App icon and logo
 - `app-ads.txt` — AdMob publisher declaration
 
 ## Before publishing
 
-Replace the 【要設定】 business-operator details in `tokushoho.html`. Confirm the actual data collected by the app and the purchase, subscription, cancellation, and refund details in the policy pages before offering the app or any paid features.
+Confirm the actual data collected by the app and the purchase, subscription, cancellation, and refund details in the policy pages before offering the app or any paid features.
 
 The Aica introduction area (screenshot placeholders) is left empty until app materials are provided.

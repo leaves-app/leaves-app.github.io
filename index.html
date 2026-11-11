@@ -3,50 +3,155 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aica</title>
+  <meta name="description" content="Aicaは、話しかけるだけで予定を作成・変更できるAIカレンダーアプリです。AIは端末内で動作し、予定の内容を外部へ送信しません。">
+  <meta name="theme-color" content="#fbfcfe" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e131a" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Aica — AIカレンダー">
+  <meta property="og:description" content="話しかけるだけで予定を作成・変更できるAIカレンダーアプリ。">
+  <meta property="og:image" content="https://leaves-app.github.io/assets/icon.png">
+  <meta property="og:type" content="website">
+  <title>Aica — AIカレンダー</title>
   <link rel="icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="assets/icon.png" alt="">Aica</a>
-    <nav>
-      <a href="#about">Aicaについて</a>
-      <a href="#support">サポート</a>
-    </nav>
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/icon.png" alt="">Aica</a>
+      <nav>
+        <a href="#features">特徴</a>
+        <a href="#plans">プラン</a>
+        <a href="#support">サポート</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <img src="assets/icon.png" alt="Aicaのアプリアイコン">
-      <h1>Aica</h1>
-      <p>ai-calendar</p>
+      <div class="wrap-narrow">
+        <img class="hero-icon" src="assets/icon.png" alt="Aicaのアプリアイコン">
+        <h1>話しかけるだけの、<br><span class="grad">ちょっと楽しいカレンダー。</span></h1>
+        <p class="lead">Aicaは、AIを活用したiPhone向けカレンダーアプリです。予定の作成・確認・変更を、ことばでもっと直感的に。予定を確認するだけの毎日を楽しくする工夫も、あちこちに隠れています。</p>
+        <p class="req">対応環境：iOS 26以降／AI機能の利用にはApple Intelligence対応端末が必要です</p>
+      </div>
     </section>
 
-    <section class="section" id="about">
-      <h2>Aicaについて</h2>
-      <p>Aicaは、AIを活用したカレンダーアプリです。スケジュール管理をより直感的、効率的に行うことができます。</p>
-      <p>予定を確認するだけの退屈な作業を楽しくするための工夫が随所に施されています。ぜひ探してみてください。</p>
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Features</p>
+          <h2>Aicaでできること</h2>
+        </div>
+        <div class="features">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+            </div>
+            <h3>ことばで予定を操作</h3>
+            <p>「明日の15時から歯医者を1時間」のように、音声やテキストで予定の作成・確認・変更・削除を依頼できます。反映前には必ず内容を確認できます。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 7h6M9 11h6M9 15h3"/></svg>
+            </div>
+            <h3>AIは端末の中で動作</h3>
+            <p>AIにはApple Foundation Modelsを使用し、音声認識もオンデバイスで行います。予定の内容が開発者や外部のサーバーへ送られることはありません。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+            </div>
+            <h3>iPhoneのカレンダーと連携</h3>
+            <p>予定はiPhone標準のカレンダーにそのまま保存されます。独自のアカウント登録は不要で、いつものカレンダーと一緒に使えます。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12C12 7 8 4 4 4c0 5 3 8 8 8Z"/><path d="M12 14c0-4 3-7 8-7 0 4-3 7-8 7Z"/></svg>
+            </div>
+            <h3>植物と、たくさんの遊び心</h3>
+            <p>毎日使うほど植物が育ちます。ほかにも、思わぬ日に思わぬ出来事が。ぜひ探してみてください。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Plans</p>
+          <h2>料金プラン</h2>
+          <p>基本機能は無料でお使いいただけます。プレミアムでは広告の非表示や外観のカスタマイズが利用できます。</p>
+        </div>
+        <div class="plans">
+          <article class="card plan">
+            <p class="plan-name">無料</p>
+            <p class="price">0<small>円</small></p>
+            <ul>
+              <li>ことばによる予定の操作</li>
+              <li>iPhoneカレンダーとの連携</li>
+              <li>広告が表示されます</li>
+            </ul>
+          </article>
+          <article class="card plan featured">
+            <span class="badge">7日間無料体験</span>
+            <p class="plan-name">プレミアム（月額）</p>
+            <p class="price">200<small>円／月（税込）</small></p>
+            <ul>
+              <li>広告の非表示</li>
+              <li>色の設定・背景画像</li>
+              <li>操作履歴を最大50件まで表示</li>
+            </ul>
+          </article>
+          <article class="card plan">
+            <p class="plan-name">プレミアム（買い切り）</p>
+            <p class="price">1,500<small>円（税込）</small></p>
+            <ul>
+              <li>月額プランと同じ機能</li>
+              <li>一度の購入でずっと利用可能</li>
+            </ul>
+          </article>
+        </div>
+        <p class="note">月額プランは自動更新です。無料体験終了後は、解約しない限り自動的に課金されます。詳しくは<a href="billing.html">アプリ内課金について</a>をご確認ください。価格は変更される場合があり、最新の価格はアプリ内の購入画面に表示されます。</p>
+      </div>
     </section>
 
     <section class="section" id="support">
-      <h2>サポート</h2>
-      <p>よくある質問は<a href="qa.html">Q&amp;A</a>をご確認ください。</p>
-      <p>お問い合わせは下記のメールアドレスまでご連絡ください。</p>
-      <p><a href="mailto:leaves.app.support@gmail.com">leaves.app.support@gmail.com</a></p>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Support</p>
+          <h2>サポート</h2>
+          <p>お困りのときは、まずよくある質問をご確認ください。<br>個人で開発しているため、返信までにお時間をいただく場合があります。</p>
+        </div>
+        <div class="support-box">
+          <a class="card link-card" href="qa.html">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"/></svg>
+            </div>
+            <div><strong>よくある質問（Q&amp;A）</strong><span>使い方や機能についての質問</span></div>
+          </a>
+          <a class="card link-card" href="mailto:leaves.app.support@gmail.com">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </div>
+            <div><strong>メールでのお問い合わせ</strong><span>leaves.app.support@gmail.com</span></div>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <nav>
-      <a href="qa.html">Q&amp;A</a>
-      <a href="privacy.html">プライバシーポリシー</a>
-      <a href="terms.html">利用規約</a>
-      <a href="tokushoho.html">特定商取引法に基づく表記</a>
-      <a href="billing.html">アプリ内課金</a>
-    </nav>
-    <p>© Aica</p>
+    <div class="wrap">
+      <nav>
+        <a href="qa.html">Q&amp;A</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="terms.html">利用規約</a>
+        <a href="tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="billing.html">アプリ内課金について</a>
+      </nav>
+      <p class="copy">© 2026 Leaves</p>
+    </div>
   </footer>
 </body>
 </html>
