@@ -5,6 +5,7 @@ GitHub Pages site for Aica (ai-calendar).
 ## Pages
 
 - `index.html` — Aica introduction and support contact
+- `qa.html` — Frequently asked questions
 - `privacy.html` — Privacy policy
 - `terms.html` — Terms of service
 - `tokushoho.html` — Disclosure under the Act on Specified Commercial Transactions
