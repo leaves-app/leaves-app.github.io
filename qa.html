@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Aicaの使い方やAIによる操作など、よくある質問にお答えします。">
+  <meta name="description" content="Aicaの使い方、AIによる操作、外観や通知の設定、プランなど、よくある質問にお答えします。">
   <title>Q&amp;A — Aica</title>
   <link rel="icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -29,67 +29,201 @@
   </div>
 
   <main class="wrap-narrow document">
-    <h2 class="faq-group">基本</h2>
+    <div class="faq-tools">
+      <label class="faq-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="faq-search" type="search" placeholder="キーワードで探す（例：通知、解約）" aria-label="よくある質問を検索" autocomplete="off" enterkeyhint="search">
+      </label>
+      <ul class="faq-chips" aria-label="カテゴリ">
+        <li><a href="#basic">基本</a></li>
+        <li><a href="#ai">AIでの操作</a></li>
+        <li><a href="#calendar">カレンダー・表示</a></li>
+        <li><a href="#appearance">外観</a></li>
+        <li><a href="#notifications">通知・ウィジェット</a></li>
+        <li><a href="#fun">楽しむための工夫</a></li>
+        <li><a href="#plans">プラン・お支払い</a></li>
+      </ul>
+    </div>
+
+    <p class="faq-empty" id="faq-empty" hidden>該当する質問が見つかりませんでした。<br>お手数ですが <a href="mailto:leaves.app.support@gmail.com">leaves.app.support@gmail.com</a> までお問い合わせください。</p>
+
+    <h2 class="faq-group" id="basic">基本</h2>
     <div class="faq">
-      <details>
+      <details id="privacy">
         <summary>個人情報やセキュリティが気になります</summary>
-        <p class="answer">Aicaは開発者のサーバーを使用せず、iPhoneのカレンダーと連携して動作します。AIにはApple Foundation Modelsを利用し、音声認識も含めて端末内で処理するため、予定の内容や音声が外部へ送信されることはありません。なお、無料版では広告配信のため、Google AdMobが端末情報や広告識別子などを取得する場合があります。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+        <div class="answer"><p>Aicaは開発者のサーバーを使用せず、iPhoneのカレンダーと連携して動作します。AIにはApple Foundation Modelsを利用し、音声認識も含めて端末内で処理するため、予定の内容や音声が外部へ送信されることはありません。独自のアカウント登録もありません。</p><p>なお、無料版では広告配信のため、Google AdMobが端末情報や広告識別子などを取得する場合があります。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p></div>
       </details>
-      <details>
+      <details id="requirements">
+        <summary>どの端末で使えますか</summary>
+        <div class="answer"><p>iOS 26以降のiPhone、iPadOS 26以降のiPadでお使いいただけます。iPadの横向きなど広い画面では、カレンダーと選んだ日の予定を左右に並べて表示します。</p><p>AI機能の利用には、Apple Intelligenceに対応した端末と設定が必要です。対応していない端末でも、入力欄がキーワード検索になるほかは、カレンダーとしてすべての機能をお使いいただけます。</p></div>
+      </details>
+      <details id="other-calendars">
+        <summary>GoogleカレンダーやOutlookの予定も表示できますか</summary>
+        <div class="answer"><p>Aicaは、iPhoneの「カレンダー」に登録されている予定を表示します。iPhoneの<span class="path">設定 → アプリ → カレンダー → カレンダーアカウント</span>でGoogleなどのアカウントを追加すると、Aicaにも表示されるようになります。</p></div>
+      </details>
+      <details id="calendar-settings">
+        <summary>表示するカレンダーや予定の保存先を変えたい</summary>
+        <div class="answer"><p><span class="path">設定 → カレンダー →「カレンダー設定」</span>から、表示するカレンダー、新しい予定の保存先、カレンダーの名前と色を変更できます。AIに「仕事カレンダーを非表示にして」のように頼むこともできます。</p></div>
+      </details>
+      <details id="tutorial">
+        <summary>チュートリアルをもう一度見たい</summary>
+        <div class="answer"><p><span class="path">設定 → サポート →「チュートリアルを見る」</span>から、いつでも見返せます。</p></div>
+      </details>
+      <details id="transfer">
+        <summary>機種変更・再インストールでデータは引き継がれますか</summary>
+        <div class="answer"><p>予定はiPhoneのカレンダーに保存されているため、カレンダーの同期設定（iCloudなど）に従って引き継がれます。外観などの主な設定、植物、ギャラリーの記録は、同じApple AccountでiCloudにサインインしていれば自動的に引き継がれます。</p><p>操作履歴、背景画像、アイコンと植物の画像、通知の設定、表示するカレンダーの選択は引き継がれないため、新しい端末で設定し直してください。プレミアムの購入については<a href="#restore">こちら</a>をご覧ください。</p></div>
+      </details>
+    </div>
+
+    <h2 class="faq-group" id="ai">AIでの操作</h2>
+    <div class="faq">
+      <details id="ai-capabilities">
+        <summary>AIに何を頼めますか</summary>
+        <div class="answer"><p>入力欄に入力するか、マイクで話しかけると、次のようなことができます。</p><ul><li>予定の追加：「明日15時に歯医者」「毎週月曜9時にジム」</li><li>予定の変更：「会議を1時間後ろにずらして」</li><li>予定の削除：「明日のランチを削除」</li><li>予定の検索：「来週人と会う約束ある？」「次の歯医者いつ？」</li><li>設定の変更：「ダークモードにして」「毎朝8時に予定一覧を通知して」</li><li>画面の移動：「通知設定を開いて」「12月3日を表示」</li><li>使い方の質問：「予定の取り消し方は？」</li></ul><p>追加・変更・削除・設定の変更は、反映する前に必ず確認が表示されます。</p></div>
+      </details>
+      <details id="ai-trouble">
         <summary>AIによる操作がうまくいきません</summary>
-        <p class="answer">端末内で動作するAIの性能には現時点で限界があり、うまく動作しない場合があります。「明日の15時から歯医者を1時間」のように、日付・時刻・内容を具体的に指示してみてください。また、AI機能の利用にはApple Intelligenceに対応した端末と設定が必要です。</p>
+        <div class="answer"><p>端末内で動作するAIの性能には現時点で限界があり、うまく動作しない場合があります。「明日の15時から歯医者を1時間」のように、日付・時刻・内容を具体的に指示してみてください。</p><p>AIが使えない場合は、端末がApple Intelligenceに対応しているか、iPhoneの設定でApple Intelligenceがオンになっているかをご確認ください。</p></div>
       </details>
-      <details>
+      <details id="ai-off">
+        <summary>AIを使わずに使いたい</summary>
+        <div class="answer"><p><span class="path">設定 → 機能</span>の「AIを利用する」をオフにすると、入力欄がキーワード検索になります。今日から1年先までの予定を、予定名や詳細に含まれる言葉で探せます。予定の追加は＋ボタンから行えます。</p></div>
+      </details>
+      <details id="voice">
+        <summary>音声入力が使えません</summary>
+        <div class="answer"><p>iPhoneの<span class="path">設定 → アプリ → Aica</span>で、マイクと音声認識を許可してください。話し終えて約2秒たつと自動で入力を終えて処理します。音声は端末内で認識され、外部へ送信されません。音声入力が使えない場合も、文字入力で同じ操作ができます。</p></div>
+      </details>
+      <details id="undo">
+        <summary>操作を取り消したい</summary>
+        <div class="answer"><p>入力欄の上に表示される操作履歴のカードを左にスワイプすると、元に戻せます。AIや手動で行った予定の追加・変更・削除と、AIで変えた設定が対象です。取り消した後も履歴は残ります。</p></div>
+      </details>
+      <details id="recurring">
+        <summary>繰り返し予定をAIで削除できません</summary>
+        <div class="answer"><p>繰り返し予定は「この回だけ」か「すべての回」かを選ぶ必要があるため、AIでは削除しません。予定カードをタップし、iPhone標準の編集画面から範囲を選んで削除してください。</p></div>
+      </details>
+      <details id="history">
+        <summary>操作履歴の表示件数を変えたい</summary>
+        <div class="answer"><p><span class="path">設定 → カレンダー</span>から、3〜50件の範囲で変更できます。履歴は最大50件まで保存されます。表示件数を多くすると、動作が重くなる場合があります。</p></div>
+      </details>
+    </div>
+
+    <h2 class="faq-group" id="calendar">カレンダー・表示</h2>
+    <div class="faq">
+      <details id="views">
+        <summary>表示を切り替えたい</summary>
+        <div class="answer"><ul><li>タイムラインと一覧：予定の右上のアイコンで切り替えます。</li><li>月・週・日：カレンダー上部の切り替えボタンをタップするか、その周辺を横にスワイプします。</li><li>月表示の簡易・詳細：右上のアイコンで、各日の予定名まで表示する詳細表示に切り替えられます。</li></ul><p>日付の表示をタップすると、カレンダーから日付を選んで移動できます。</p></div>
+      </details>
+      <details id="drag">
+        <summary>予定の時間をドラッグで変えたい</summary>
+        <div class="answer"><p>タイムラインの予定カードを長押しすると、そのままドラッグして時間を移動できます。カードの上端・下端の中央を長押ししてドラッグすると、長さを変えられます（15分単位）。</p><p>誤って動かしてしまうのが心配な場合は、<span class="path">設定 → カレンダー</span>の「ドラッグでの変更を確認」をオンにしてください。終日予定と繰り返し予定は、タップして編集画面から変更します。</p></div>
+      </details>
+      <details id="start-hour">
+        <summary>夜遅くの予定が見づらい（日付の区切りを変えたい）</summary>
+        <div class="answer"><p><span class="path">設定 → カレンダー</span>で、タイムラインの開始時刻を0〜23時から選べます。たとえば6時にすると、6時から翌朝6時までを1日として表示します。</p></div>
+      </details>
+      <details id="launch">
+        <summary>起動したらカレンダーを表示したい</summary>
+        <div class="answer"><p><span class="path">設定 → 機能</span>の「起動時にカレンダーを開く」をオンにすると、カレンダーのタブから始まります。</p></div>
+      </details>
+    </div>
+
+    <h2 class="faq-group" id="appearance">外観</h2>
+    <div class="faq">
+      <details id="customize">
         <summary>見た目を変えたい</summary>
-        <p class="answer">設定 → 外観から、テンプレート、色、背景の写真、タブのアイコンなどを変更できます。すべて無料でご利用いただけます。</p>
+        <div class="answer"><p><span class="path">設定 → 外観</span>から、次の項目を変更できます。すべて無料でご利用いただけます。</p><ul><li>テンプレート（おすすめ・マイテンプレート・月ごとの自動切り替え）</li><li>フォント・文字サイズ・文字色</li><li>テーマ（ライト・ダーク・端末と同期）</li><li>リキッドグラスの種類と透過度、予定の色の濃さ</li><li>背景色、各部の色、写真の背景画像</li><li>アイコンと植物の画像</li></ul></div>
       </details>
-      <details>
+      <details id="auto-template">
+        <summary>月が変わったら見た目が変わりました</summary>
+        <div class="answer"><p>テンプレートの「自動切り替え」が「月ごと」になっていると、月が変わってアプリを開いたときに、その月のテンプレートに切り替わります（新しくインストールした場合は、はじめからオンになっています）。</p><p>切り替えたくない場合は、<span class="path">設定 → 外観</span>の「自動切り替え」をオフにするか、お好きなテンプレートを選んでください。各月のテンプレートを、保存したマイテンプレートに変えることもできます。</p></div>
+      </details>
+      <details id="my-template">
+        <summary>今の見た目を保存しておきたい</summary>
+        <div class="answer"><p><span class="path">設定 → 外観</span>の「マイテンプレート」の列にある「現在の外観を保存」から、名前を付けて保存できます（最大20件）。長押しすると、上書き・名前の変更・削除ができます。</p></div>
+      </details>
+      <details id="custom-artwork">
+        <summary>アイコンや植物を好きな画像にしたい</summary>
+        <div class="answer"><p><span class="path">設定 → 外観 →「アイコンと植物」</span>から、タブや入力欄のアイコン、植物（芽・若葉・各月の木）を、写真から選んだ画像に置き換えられます。いつでも標準の画像に戻せます。</p></div>
+      </details>
+    </div>
+
+    <h2 class="faq-group" id="notifications">通知・ウィジェット</h2>
+    <div class="faq">
+      <details id="notification-settings">
+        <summary>通知やバッジを設定したい</summary>
+        <div class="answer"><p><span class="path">設定 → 通知</span>から、次の項目を設定できます。</p><ul><li>予定の通知：各予定に設定した通知の時刻に届きます</li><li>毎日の予定一覧：指定した時刻に、当日または翌日の予定をまとめて通知します</li><li>バッジ：アプリアイコンに今日の予定の件数を表示します</li></ul></div>
+      </details>
+      <details id="notification-trouble">
+        <summary>通知が届かない・二重に届きます</summary>
+        <div class="answer"><p>届かない場合は、iPhoneの<span class="path">設定 → 通知 → Aica</span>で通知が許可されているかご確認ください。長い間アプリを開いていない場合や、ほかのアプリで予定を変更した直後は、通知が最新になっていないことがあります。アプリを一度開くと更新されます。</p><p>二重に届く場合は、iPhone標準のカレンダーからも同じ予定の通知が届いています。どちらか一方の通知をオフにしてください。</p></div>
+      </details>
+      <details id="widgets">
         <summary>ウィジェットやライブアクティビティを使いたい</summary>
-        <p class="answer">ホーム画面やロック画面を長押しして、ウィジェットの追加から「Aica」を選んでください。ライブアクティビティは、設定 → 通知からオン・オフや表示を始めるタイミングを変更できます。</p>
+        <div class="answer"><p>ホーム画面やロック画面を長押しして、ウィジェットの追加から「Aica」を選んでください。「次の予定」「タイムライン」「カレンダー」「Aicaに話しかける」があります。コントロールセンターやアクションボタンに、音声入力・文字入力を開くコントロールを割り当てることもできます。</p><p>ライブアクティビティは、<span class="path">設定 → 通知</span>からオン・オフや、何分前の予定から表示するかを変更できます。</p></div>
+      </details>
+      <details id="live-activity">
+        <summary>ライブアクティビティが表示されません</summary>
+        <div class="answer"><p>Aicaはサーバーを使わないため、ライブアクティビティを始められるのはアプリを開いたときに限られます。予定が近づいたらアプリを一度開いてください。終日予定と12時間を超える予定は対象外です。予定の終了後も、次にアプリを開くまで表示が残ることがあります。</p><p>表示されない場合は、iPhoneの<span class="path">設定 → アプリ → Aica →「ライブアクティビティ」</span>がオンになっているかご確認ください。iPadでは利用できません。</p></div>
       </details>
     </div>
 
-    <h2 class="faq-group">楽しむための工夫</h2>
+    <h2 class="faq-group" id="fun">楽しむための工夫</h2>
     <div class="faq">
-      <details>
+      <details id="surprise">
         <summary>変な演出が発生しました</summary>
-        <p class="answer">アプリを楽しむための工夫です。</p>
+        <div class="answer"><p>アプリを楽しむための工夫です。</p></div>
       </details>
-      <details>
+      <details id="surprise-count">
         <summary>工夫はいくつありますか</summary>
-        <p class="answer">たくさんあります。アップデートで随時追加されます。</p>
+        <div class="answer"><p>たくさんあります。アップデートで随時追加されます。</p></div>
       </details>
-      <details>
+      <details id="calendar-mode">
         <summary>演出が邪魔です</summary>
-        <p class="answer">設定で「カレンダーモード」をオンにすると、ただのカレンダーアプリになります。</p>
+        <div class="answer"><p><span class="path">設定 → 機能</span>の「カレンダーモード」をオンにすると、ただのカレンダーアプリになります。</p></div>
       </details>
-      <details>
+      <details id="plant">
         <summary>植物が成長しません</summary>
-        <p class="answer">毎日アプリを起動して、植物を観察してください。</p>
+        <div class="answer"><p>毎日アプリを起動して、植物を観察してください。</p></div>
       </details>
-      <details>
+      <details id="aica-chan">
         <summary>アイカちゃんに勝てません</summary>
-        <p class="answer">アイカちゃんは1級相当（開発者基準）の実力があります。鍛錬してください。</p>
+        <div class="answer"><p>アイカちゃんは1級相当（開発者基準）の実力があります。鍛錬してください。</p></div>
       </details>
-      <details>
+      <details id="gallery">
         <summary>見つけた隠し機能や独り言はどこで見られますか</summary>
-        <p class="answer">設定 → ギャラリーから閲覧できます（無料でご利用いただけます）。</p>
+        <div class="answer"><p><span class="path">設定 → ギャラリー</span>から閲覧できます（無料でご利用いただけます）。まだ見つけていないものも、グレーで載っています。</p></div>
+      </details>
+      <details id="birthday">
+        <summary>誕生日を設定するとどうなりますか</summary>
+        <div class="answer"><p>誕生日にアプリを開くと、Aicaがお祝いします。<span class="path">設定 → 機能 →「誕生日」</span>から設定できます。誕生日は端末の中だけに保存されます。</p></div>
       </details>
     </div>
 
-    <h2 class="faq-group">プラン・お支払い</h2>
+    <h2 class="faq-group" id="plans">プラン・お支払い</h2>
     <div class="faq">
-      <details>
+      <details id="premium">
         <summary>プレミアムでは何ができますか</summary>
-        <p class="answer">広告が表示されなくなります。外観のカスタマイズ、操作履歴、ギャラリーなど、ほかの機能はすべて無料でお使いいただけます。</p>
+        <div class="answer"><p>広告が表示されなくなります。外観のカスタマイズ、操作履歴、ギャラリーなど、ほかの機能はすべて無料でお使いいただけます。料金は月額200円（初回7日間の無料体験あり。対象となる方のみ）または買い切り1,500円です。</p></div>
       </details>
-      <details>
+      <details id="cancel">
         <summary>サブスクリプションを解約したい</summary>
-        <p class="answer">iPhoneの「設定」→ お名前 →「サブスクリプション」から解約できます。アプリを削除しただけでは解約されません。詳しくは<a href="billing.html">アプリ内課金について</a>をご確認ください。</p>
+        <div class="answer"><p>iPhoneの「設定」→ お名前 →「サブスクリプション」から解約できます。アプリの<span class="path">設定 → プレミアムプラン</span>の「サブスクリプションを管理」からも開けます。アプリを削除しただけでは解約されません。詳しくは<a href="billing.html">アプリ内課金について</a>をご確認ください。</p></div>
       </details>
-      <details>
+      <details id="restore">
         <summary>機種変更したら購入が反映されていません</summary>
-        <p class="answer">購入時と同じApple Accountでサインインし、アプリの「設定」→「プレミアムプラン」から「購入を復元」を行ってください。外観などの主な設定や植物・ギャラリーの記録はiCloudで自動的に引き継がれます（背景画像と操作履歴は引き継がれません）。</p>
+        <div class="answer"><p>購入時と同じApple Accountでサインインし、アプリの<span class="path">設定 → プレミアムプラン</span>から「購入を復元」を行ってください。</p></div>
+      </details>
+      <details id="refund">
+        <summary>返金してほしい</summary>
+        <div class="answer"><p>決済はAppleが行っているため、開発者から直接返金することはできません。<a href="https://reportaproblem.apple.com/">Appleの「問題を報告する」ページ</a>からリクエストしてください。</p></div>
+      </details>
+      <details id="tip">
+        <summary>「開発者を応援」とは何ですか</summary>
+        <div class="answer"><p>Aicaを気に入っていただけた方が、開発を応援するための購入（500円）です。<span class="path">設定 → プレミアムプラン</span>から何度でも購入できますが、機能の追加や広告の非表示などの特典はありません。</p></div>
+      </details>
+      <details id="ad-privacy">
+        <summary>広告のトラッキングや同意の設定を変えたい</summary>
+        <div class="answer"><p>トラッキングの許可は、iPhoneの<span class="path">設定 → プライバシーとセキュリティ → トラッキング</span>から変更できます。許可しなくても、アプリの機能は制限されません。同意が必要な地域では、アプリの<span class="path">設定 → プレミアムプラン</span>から広告のプライバシー設定を変更できます。</p></div>
       </details>
     </div>
   </main>
@@ -106,5 +240,6 @@
       <p class="copy">© 2026 Leaves</p>
     </div>
   </footer>
+  <script src="faq.js" defer></script>
 </body>
 </html>
